@@ -1,5 +1,6 @@
 import "./earbudsView.css";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 const Earbuds = () => {
   return (
@@ -71,6 +72,7 @@ const Earbuds = () => {
           </article>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
