@@ -166,16 +166,9 @@
   justify-content: space-around;
   align-items: center;
 }
-.boton {
-  width: 70%;
-  height: 4em;
-  border: none;
-  background-color: #1a73e8;
-  color: white;
-  border-radius: 4px;
-  font-weight: bold;
-}
-.botoncantidad {
+
+#quantityButton {
+
   width: 20%;
   height: 4em;
   border: 0.5px solid #353a49;
@@ -188,7 +181,7 @@
 #first {
   margin-bottom: 10%;
 }
-.segundo {
+#second {
   display: flex;
   flex-direction: row;
   justify-content: space-start;
@@ -200,50 +193,24 @@
   color: #57626b;
   font-weight: bold;
 }
-.camion {
+
+#delivery {
   padding-right: 10px;
 }
-.numero {
+#number {
   color: #1a73e8;
 }
 
 /* Media query para tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  * {
-    font-family: "inter", sans-serif;
-  }
-  #seeMore {
-    width: 100vw;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    align-items: center;
-    justify-content: space-start;
-    margin-left: 2 em;
-    font-size: 12px;
-  }
-  #arrow {
-    padding-right: 10px;
-    padding-left: 30px;
-  }
-
   #all {
-    margin-left: 2em;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
   #watchImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 93%;
-    height: 500px;
-    background-color: #f8f9fa;
-    border-radius: 20px;
-    margin-top: 3px;
     margin-bottom: 2%;
   }
   #imageIconWatch {
@@ -271,21 +238,15 @@
     justify-content: start;
   }
   #fitbitInspire3 {
-    font-size: 35px;
-    color: #353a49;
-    font-weight: bold;
     margin-bottom: 10px;
     width: 500px;
   }
   #health {
-    font-size: 12px;
-    color: #57626b;
+
     margin-bottom: 2%;
   }
+
   #price {
-    font-size: 20px;
-    color: #353a49;
-    font-weight: bold;
     margin-bottom: 3%;
   }
   #watchSpace {
@@ -294,17 +255,9 @@
     justify-content: start;
   }
   #info {
-    padding-left: 1em;
-    padding-right: 1em;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   #chooseAColor {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #57626b;
     margin-bottom: 15px;
     margin-right: 3px;
   }
@@ -314,7 +267,6 @@
     display: flex;
   }
   #separator {
-    border: 0.5px solid #353a49;
     width: 260%;
     justify-content: center;
     display: flex;
@@ -331,18 +283,23 @@
   #color {
     width: 130px;
     height: 100px;
-    border: 1px solid #353a49;
-    border-radius: 4px;
     display: grid;
     margin-right: 100%;
 
-    font-size: 12px;
-    color: #57626b;
   }
 
   #sizePhotoText {
     text-align: center;
   }
+
+  #salesSpace {
+    width: 70%;
+  }
+}
+
+/* Mediaqueries para móviles */
+@media screen and (max-width: 767px) {
+=======
   #upperPrice {
     font-size: 35px;
     color: #353a49;
@@ -418,26 +375,6 @@
 
 /* Media query para mÃ³viles */
 @media screen and (max-width: 767px) {
-  * {
-    font-family: "inter", sans-serif;
-  }
-
-  #seeMore {
-    width: 100vw;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    align-items: center;
-    justify-content: space-start;
-    margin-left: 2 em;
-    font-size: 12px;
-  }
-  #arrow {
-    padding-right: 10px;
-    padding-left: 30px;
-  }
-
   #all {
     margin-left: 2em;
     display: flex;
@@ -450,16 +387,8 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 500px;
-    background-color: #f8f9fa;
-    border-radius: 20px;
     margin-top: 3px;
     margin-bottom: 2%;
-  }
-  #imageIconWatch {
-    display: flex;
-    width: auto;
-    height: auto;
   }
   #imageRight {
     width: 100%;
@@ -476,121 +405,21 @@
     justify-content: start;
   }
   #fitbitInspire3 {
-    font-size: 35px;
-    color: #353a49;
-    font-weight: bold;
     margin-bottom: 5%;
     width: 500px;
   }
   #health {
     font-size: 12px;
-    color: #57626b;
     margin-bottom: 2%;
   }
   #price {
-    font-size: 20px;
-    color: #353a49;
-    font-weight: bold;
-    margin-bottom: 3%;
-  }
-  #chooseAColor {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #57626b;
-    margin-bottom: 20px;
-  }
-
-  #iconPhoto {
-    height: 100px;
-    width: 90px;
-  }
-  #separator {
-    border: 0.5px solid #353a49;
-    width: 100%;
-  }
-
-  #watchColor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  #color {
-    width: 32%;
-    height: 130px;
-    border: 1px solid #353a49;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-    color: #57626b;
-  }
-
-  #sizePhotoText {
-    margin-top: -2px;
-    text-align: center;
-    width: 20%;
-  }
-
-  #upperPrice {
-    font-size: 35px;
-    color: #353a49;
-    margin-left: 10px;
-    font-weight: bold;
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-
-  #salesSpace {
-    background-color: #f8f9fa;
-    padding: 1em;
-    margin-top: 5%;
-    margin-right: 7%;
-    border-radius: 4px;
-    margin-left: 3%;
-  }
-
-  #separator2 {
-    border: 0.5px solid #353a49;
-    width: 95%;
-    margin-bottom: 5%;
-  }
-
-  #add {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .boton {
-    width: 100%;
-    height: 4em;
-    border: none;
-    background-color: #1a73e8;
-    color: white;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  .botoncantidad {
-    width: 20%;
-    height: 4em;
-    border: 0.5px solid #353a49;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-    text-align: left;
-    padding-left: 10px;
-    padding-right: 20px;
     margin-bottom: 3%;
   }
   #first {
     margin-bottom: -10px;
   }
 
-  .segundo {
+  #second {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -600,11 +429,4 @@
     color: #57626b;
     font-weight: bold;
     margin-bottom: -10px;
-  }
-  .camion {
-    padding-right: 10px;
-  }
-  .numero {
-    color: #1a73e8;
-  }
 }

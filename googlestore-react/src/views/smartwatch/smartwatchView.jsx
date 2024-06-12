@@ -59,28 +59,28 @@ const Smartwatch = () => {
                   <div id="upperPrice">99,95 €</div>
                   <hr id="separator2"></hr>
                   <div id="add">
-                    <select id="botonCantidad" name="unidades">
-                      <option value="unidades">1</option>
-                      <option value="unidades">2</option>
-                      <option value="unidades">3</option>
-                      <option value="unidades">4</option>
-                      <option value="unidades">5</option>
-                      <option value="unidades">6</option>
-                      <option value="unidades">7</option>
-                      <option value="unidades">8</option>
-                      <option value="unidades">9</option>
-                      <option value="unidades">10</option>
+                    <select id="quantityButton" name="unit">
+                      <option value="unit">1</option>
+                      <option value="unit">2</option>
+                      <option value="unit">3</option>
+                      <option value="unit">4</option>
+                      <option value="unit">5</option>
+                      <option value="unit">6</option>
+                      <option value="unit">7</option>
+                      <option value="unit">8</option>
+                      <option value="unit">9</option>
+                      <option value="unit">10</option>
                     </select>
                   </div>
                 </div>
-                <div id="segundo">
+                <div id="second">
                   <img
-                    id="camion"
+                    id="delivery"
                     src="src/assets/images/icons/Delivery.svg"
-                    alt="logo-camion"
+                    alt="deliveryLogo"
                   />
-                  <p id="envio">Delivers 29 Apr to &nbsp;</p>{" "}
-                  <p id="numero">08023</p>
+                  <p id="shipment">Delivers 29 Apr to &nbsp;</p>{" "}
+                  <p id="number">08023</p>
                 </div>
               </seccion>
             </seccion>
