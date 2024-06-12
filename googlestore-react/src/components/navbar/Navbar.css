@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 #00000033;
+}
+
+#nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  height: 2rem;
+  width: 2rem;
+  margin-right: -1rem;
+}
+
+#nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  font-family: Inter, sans-serif;
+  font-size: 0.75rem;
+  color: #57626b;
+  cursor: pointer;
+  margin-left: -1rem;
+}
+
+#active-item {
+  color: #1a73e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#smartwatch {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+#smartwatch:hover {
+  font-weight: bold;
+}
+
+#nav-icons {
+  display: flex;
+  gap: 0.8rem;
+  cursor: pointer;
+}
