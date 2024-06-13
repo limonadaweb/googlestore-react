@@ -1,4 +1,6 @@
+import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,9 +10,10 @@ const Navbar = () => {
           <img id="logo" src="src\assets\images\google-logo.png" alt="Google" />
           <ul id="nav-list">
             <li>Phones</li>
-            <li id="active-item">Earbuds</li>
+            <li id="active-item">
+              <Link to="/">Earbuds</Link></li>
             <li>
-              <a id="smartwatch">Watches</a>
+              <Link to="/smarthwatchView" id="smartwatch">Watches</Link>
             </li>
             <li>Smart Home</li>
             <li>Accesories</li>

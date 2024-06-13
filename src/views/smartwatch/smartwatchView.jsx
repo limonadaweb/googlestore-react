@@ -1,8 +1,11 @@
 import "../smartwatch/smartwatchView.css";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 const Smartwatch = () => {
   return (
     <>
+    <Navbar />
       <main>
         <section id="seeMore">
           <img id="arrow" src="src/assets/images/icons/Arrow.svg" />
@@ -87,6 +90,7 @@ const Smartwatch = () => {
           </seccion>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
