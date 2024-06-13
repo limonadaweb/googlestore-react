@@ -1,11 +1,19 @@
 import "../smartwatch/smartwatchView.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import { useState } from "react";
 
 const Smartwatch = () => {
+  const [mainImage, setMainImage] = useState(
+    "src/assets/images/smartwatch/smartwatch_black.png"
+  );
+
+  const handleImageClick = (imageUrl) => {
+    setMainImage(imageUrl);
+  };
   return (
     <>
-    <Navbar />
+      <Navbar />
       <main>
         <section id="seeMore">
           <img id="arrow" src="src/assets/images/icons/Arrow.svg" />
@@ -13,10 +21,7 @@ const Smartwatch = () => {
         </section>
         <section id="all">
           <div id="watchImage">
-            <img
-              id="imageIconWatch"
-              src="src/assets/images/smartwatch/smartwatch_black.png"
-            />
+            <img id="imageIconWatch" src={mainImage} />
           </div>
 
           <seccion id="imageRight">
@@ -37,20 +42,35 @@ const Smartwatch = () => {
                     <img
                       id="iconPhoto"
                       src="src/assets/images/smartwatch/smartwatch_black.png"
-                    />{" "}
+                      onClick={() =>
+                        handleImageClick(
+                          "src/assets/images/smartwatch/smartwatch_black.png"
+                        )
+                      }
+                    />
                     <p id="sizePhotoText">Midnight Zen</p>
                   </div>
                   <div id="color">
                     <img
                       id="iconPhoto"
                       src="src/assets/images/smartwatch/smartwatch_pink.png"
-                    />{" "}
+                      onClick={() =>
+                        handleImageClick(
+                          "src/assets/images/smartwatch/smartwatch_pink.png"
+                        )
+                      }
+                    />
                     <p id="sizePhotoText">Lilac Bliss</p>
                   </div>
                   <div id="color">
                     <img
                       id="iconPhoto"
                       src="src/assets/images/smartwatch/smartwatch_yellow.png"
+                      onClick={() =>
+                        handleImageClick(
+                          "src/assets/images/smartwatch/smartwatch_yellow.png"
+                        )
+                      }
                     />
                     <p id="sizePhotoText">Morning Glow</p>
                   </div>

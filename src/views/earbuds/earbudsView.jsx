@@ -6,6 +6,9 @@ import { useState } from "react";
 
 const Earbuds = () => {
   const [cart, setCart] = useState([]);
+  const [mainImage, setMainImage] = useState(
+    "src/assets/images/earbuds/earbuds_01.png"
+  );
 
   const handleAdd = () => {
     setCart([...cart, "earbud"]);
@@ -15,6 +18,10 @@ const Earbuds = () => {
   const handleRemove = () => {
     setCart(cart.slice(0, -1));
     console.log("Removed from cart:", cart.slice(0, -1));
+  };
+
+  const handleImageClick = (imageUrl) => {
+    setMainImage(imageUrl);
   };
 
   return (
@@ -29,30 +36,38 @@ const Earbuds = () => {
             <input
               id="model-earbud"
               type="image"
-              src="src\assets\images\earbuds\earbuds_01.png"
+              src="src/assets/images/earbuds/earbuds_01.png"
+              onClick={() =>
+                handleImageClick("src/assets/images/earbuds/earbuds_01.png")
+              }
             />
             <input
               id="model-earbud"
               type="image"
-              src="src\assets\images\earbuds\earbuds_02.png"
+              src="src/assets/images/earbuds/earbuds_02.png"
+              onClick={() =>
+                handleImageClick("src/assets/images/earbuds/earbuds_02.png")
+              }
             />
             <input
               id="model-earbud"
               type="image"
-              src="src\assets\images\earbuds\earbuds_03.png"
+              src="src/assets/images/earbuds/earbuds_03.png"
+              onClick={() =>
+                handleImageClick("src/assets/images/earbuds/earbuds_03.png")
+              }
             />
             <input
               id="model-earbud"
               type="image"
-              src="src\assets\images\earbuds\earbuds_04.png"
+              src="src/assets/images/earbuds/earbuds_04.png"
+              onClick={() =>
+                handleImageClick("src/assets/images/earbuds/earbuds_04.png")
+              }
             />
           </div>
         </section>
-        <img
-          id="main-banner"
-          src="src\assets\images\earbuds\earbuds_01.png"
-          alt="Earbuds"
-        />
+        <img id="main-banner" src={mainImage} alt="Earbuds" />
         <section id="main-aside">
           <article id="description">
             <h1>Google Pixel Buds Pro</h1>
