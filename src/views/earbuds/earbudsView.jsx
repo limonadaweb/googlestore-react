@@ -1,8 +1,22 @@
 import "./earbudsView.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import Button from "../../components/button/Button";
+import { useState } from "react";
 
 const Earbuds = () => {
+  const [cart, setCart] = useState([]);
+
+  const handleAdd = () => {
+    setCart([...cart, "earbud"]);
+    console.log("Added to cart:", [...cart, "earbud"]);
+  };
+
+  const handleRemove = () => {
+    setCart(cart.slice(0, -1));
+    console.log("Removed from cart:", cart.slice(0, -1));
+  };
+
   return (
     <>
       <Navbar />
@@ -64,6 +78,7 @@ const Earbuds = () => {
               <select name="number" id="number">
                 <option value="1">1</option>
               </select>
+              <Button handleAdd={handleAdd} handleRemove={handleRemove} />
             </div>
             <span>
               <img src="src\assets\images\icons\Delivery.svg" alt="Delivery" />
