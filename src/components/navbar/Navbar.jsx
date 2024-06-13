@@ -11,9 +11,12 @@ const Navbar = () => {
           <ul id="nav-list">
             <li>Phones</li>
             <li id="active-item">
-              <Link to="/">Earbuds</Link></li>
+              <Link to="/earbudsView">Earbuds</Link>
+            </li>
             <li>
-              <Link to="/smarthwatchView" id="smartwatch">Watches</Link>
+              <Link to="/smarthwatchView" id="smartwatch">
+                Watches
+              </Link>
             </li>
             <li>Smart Home</li>
             <li>Accesories</li>
