@@ -1,8 +1,21 @@
 import "../smartwatch/smartwatchView.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import Button from "../../components/button/Button";
+import { useState } from "react";
 
 const Smartwatch = () => {
+  const [cart, setCart] = useState([]);
+
+  const handleAdd = () => {
+    setCart([...cart, "earbud"]);
+    console.log("Added to cart:", [...cart, "earbud"]);
+  };
+
+  const handleRemove = () => {
+    setCart(cart.slice(0, -1));
+    console.log("Removed from cart:", cart.slice(0, -1));
+  };
   return (
     <>
     <Navbar />
@@ -74,7 +87,9 @@ const Smartwatch = () => {
                       <option value="unit">9</option>
                       <option value="unit">10</option>
                     </select>
+                    <Button handleAdd={handleAdd} handleRemove={handleRemove} id="buttonAdd"/>
                   </div>
+                  
                 </div>
                 <div id="second">
                   <img
