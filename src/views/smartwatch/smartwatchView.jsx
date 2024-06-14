@@ -2,6 +2,7 @@ import "../smartwatch/smartwatchView.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
+import Selector from "../../components/selector/selector";
 import { useState } from "react";
 
 
@@ -95,18 +96,7 @@ const Smartwatch = () => {
                   <div id="upperPrice">99,95 €</div>
                   <hr id="separator2"></hr>
                   <div id="add">
-                    <select id="quantityButton" name="unit">
-                      <option value="unit">1</option>
-                      <option value="unit">2</option>
-                      <option value="unit">3</option>
-                      <option value="unit">4</option>
-                      <option value="unit">5</option>
-                      <option value="unit">6</option>
-                      <option value="unit">7</option>
-                      <option value="unit">8</option>
-                      <option value="unit">9</option>
-                      <option value="unit">10</option>
-                    </select>
+                    <Selector id="quantityButton"/>
                     <Button handleAdd={handleAdd} handleRemove={handleRemove} id="buttonAdd"/>
                   </div>
                   

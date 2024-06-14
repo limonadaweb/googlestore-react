@@ -2,6 +2,7 @@ import "./earbudsView.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
+import Selector from "../../components/selector/selector";
 import { useState } from "react";
 
 const Earbuds = () => {
@@ -90,14 +91,7 @@ const Earbuds = () => {
             <h2>229 €</h2>
             <hr id="separator" />
             <div id="cart-form">
-              <select name="number" id="number">
-                <option value="quantity">1</option>
-                <option value="quantity">2</option>
-                <option value="quantity">3</option>
-                <option value="quantity">4</option>
-                <option value="quantity">5</option>
-                <option value="quantity">6</option>
-              </select>
+              <Selector id="quantityButton"/>
               <Button handleAdd={handleAdd} handleRemove={handleRemove} />
             </div>
             <span>
