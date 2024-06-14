@@ -11,6 +11,7 @@ const Smartwatch = () => {
   const handleImageClick = (imageUrl) => {
     setMainImage(imageUrl);
   };
+  
   return (
     <>
       <Navbar />
