@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import { useState } from "react";
-import { useState } from "react";
+
 
 const Smartwatch = () => {
   const [mainImage, setMainImage] = useState(
@@ -37,7 +37,7 @@ const Smartwatch = () => {
             <img id="imageIconWatch" src={mainImage} />
           </div>
 
-          <seccion id="imageRight">
+          <section id="imageRight">
             <section id="information">
               <div id="title">
                 <div id="fitbitInspire3">Fitbit Inspire 3</div>
@@ -46,7 +46,7 @@ const Smartwatch = () => {
                 <div id="price">99,95 €</div>
               </div>
             </section>
-            <seccion id="watchSpace">
+            <section id="watchSpace">
               <div id="info">
                 <hr id="separator"></hr>
                 <div id="chooseAColor">Choose a color</div>
@@ -90,7 +90,7 @@ const Smartwatch = () => {
                 </div>
               </div>
 
-              <seccion id="salesSpace">
+              <section id="salesSpace">
                 <div id="first">
                   <div id="upperPrice">99,95 €</div>
                   <hr id="separator2"></hr>
@@ -120,9 +120,9 @@ const Smartwatch = () => {
                   <p id="shipment">Delivers 29 Apr to &nbsp;</p>{" "}
                   <p id="number">08023</p>
                 </div>
-              </seccion>
-            </seccion>
-          </seccion>
+              </section>
+            </section>
+          </section>
         </section>
       </main>
       <Footer />

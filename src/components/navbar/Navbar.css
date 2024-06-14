@@ -1,7 +1,7 @@
 *{
   font-family: 'inter', sans-serif ;
 }
-navbar {
+header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -45,15 +45,15 @@ navbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
   margin-right: 10px;
+  width: 12%;
 }
 
 
 /* Media query para tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-  navbar{
+  header{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -85,7 +85,7 @@ navbar {
 /* Media query para móviles */
 @media screen and (max-width: 767px) {
 
-  navbar {
+  header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
