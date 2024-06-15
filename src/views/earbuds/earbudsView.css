@@ -9,6 +9,32 @@ main {
   width: 100%;
 }
 
+#seeMore{
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 7px;;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  align-items: center;
+  justify-content: space-start;
+  margin-left: 30px;
+  width: 200px;
+  height: 10px;
+}
+#arrow{
+  padding-right: 10px;
+  padding-left: 30px;
+}
+#all{
+  margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
 #images-section {
   display: flex;
   height: 100%;
@@ -27,36 +53,89 @@ main {
   border-radius: 50%;
   cursor: pointer;
 }
-#main-banner {
-  width: 35rem;
-  background-color: #f8f8fa;
-  height: 80%;
-  border-radius: 8px;
+#imagen-earbuds{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 550px;
+  background-color: #F8F9FA;
+  border-radius: 20px;
+  margin-top: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
+
 }
-#main-aside {
+#main-banner {
+  display: flex;
+  width: 600px;
+  height: 400px;
+}
+#right{
+  width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    margin-top: 10%;
+}
+#information{
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-span {
-  font-family: Inter, sans-serif;
-  font-size: 0.75rem;
-  color: #57626b;
-}
-h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  justify-content: start;
+  margin-bottom: 50px;
 }
 
-h2,
-#price {
-  font-weight: bold;
-}
-#colors {
-  cursor: pointer;
+#title{
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 90%;
   display: flex;
-  flex-direction: row;
-  gap: 8px;
+  flex-direction: column;
+  justify-content: end;
+}
+.googlePixelBuds{
+  font-size: 35px;
+  font-weight: bold;
+  color: #353A49;
+  margin-top:80px;
+  
+  margin-bottom: 5%;
+} 
+#information, #salesSpace {
+  flex: 1;
+  margin-right: 50px;
+}
+#music-sound, #choose-a-color, #see-product-details{
+  font-size: 12px;
+  color:#57626B;
+  margin-bottom: 5%;
+}
+#price{
+  font-size: 20px;
+  color:#353A49;
+  font-weight: bold;
+  margin-bottom: 8%;
+}
+
+
+#slowInfo{
+  padding-left: 1em;
+    padding-right: 1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+#choose-a-color{
+  margin-top: 20px;
+    margin-bottom: 20px;
 }
 #blue,
 #white,
@@ -87,68 +166,235 @@ h2,
 #orange {
   background-color: #e58177;
 }
-
-#delivery {
-  background-color: #f8f9fb;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 30%;
-  margin-bottom: 10%;
-}
-
 #separator {
-  border: solid #9a9a9a;
+  margin-top: -5px;
+  border: 0.5px solid #353A49;
+  width: 100%;
+}
+#salesSpace{
+  background-color: #F8F9FA;
+  padding: 1em;
+  margin-top: 5%;
+  margin-right: 7%;
+  border-radius: 4px; 
+  margin-left: 3%;
+}
+#priceUpp{
+  font-size: 35px;
+  color:#353A49;
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+#separator2 {
+  border: 0.5px solid #353A49;
   width: 95%;
   margin-bottom: 5%;
 }
-
-#cart-form {
+#add{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  
+}
+#first{
+  margin-bottom: 10%;
+}
+#second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: -3%;
+  font-size: 12px;
+  color:#57626B;
+  font-weight: bold;
+}
+#delivery{
+  padding-right: 10px;
+}
+#num{
+  color: #1a73e8 ;
 }
 
-select {
-  border: 1px solid #57626b;
-  padding: 0.3rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.75rem;
-  text-align: center;
+/* Media query para tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+#root, #Index {
+  height: 100%;
+}  
+main{
+  height: 70%;
+}  
+  #images-section{
+    display:none;
+  }
+
+  #arrow{
+    padding-right: 10px;
+    margin-top: -50px;
+    margin-left: -30px;
+
+
+}
+#seeProductDetails{
+margin-top: -40px;
 }
 
-@media (max-width: 915px) {
-  main {
-    height: 80%;
-    top: 20%;
-  }
-  #images-section {
-    display: none;
-  }
-  #main-banner {
-    width: 80%;
-    height: auto;
-  }
-  #main-aside {
+#all{
+    margin-left: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: start;
     width: 100%;
-  }
 }
 
-@media (max-width: 431px) {
+#right {
+    width: 100%;
+    margin-left: -150px;
+}
+#slowSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -150px;
+    width: 110%;
+    margin-top: -10px;
+}
+
+#choose-a-color{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#colors{
+    margin-top: -150px;
+}
+#salesSpace{
+    background-color: #F8F9FA;
+    padding: 1em;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    border-radius: 4px; 
+    width: 140%;
+    margin-left: 40px;
+    
+    }
+
+  #separator {
+        border: 0.5px solid #353A49;
+        width: 170%;
+        margin-bottom: 5%;
+    }
+
+
+  #imagen-earbuds{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 132%;
+        height: 470px;
+        background-color: #F8F9FA;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-bottom: -60px;
+        margin-left: -120px;
+    
+    }
+  #imagen-icon {
+        display: flex;
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px){
   main {
     height: 70%;
   }
-  #main-banner {
-    max-height: 30%;
-  }
-  #cart-form {
-    flex-direction: column;
-  }
-  #number {
-    max-width: 32%;
-    margin-bottom: 5px;
-  }
+  #arrow{
+    padding-right: 10px;
+    margin-top: -50px;
+    margin-left: -30px;
+
+
+}
+#seeProductDetails{
+margin-top: -40px;
+}
+
+#all{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+#right {
+    width: 100%;
+    margin-left: -150px;
+}
+#slowSection {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#colors{
+    width: 100%;
+    margin-left: 70px;  
+    margin-bottom: 30px;
+}
+
+
+#choose-a-color{
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+#title{
+    margin-left: 50px;
+}
+#salesSpace{
+    background-color: #F8F9FA;
+    padding: 1em;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    border-radius: 4px; 
+    width: 100%;
+    margin-left: 60px;
+    
+    }
+
+#separator {
+        border: 0.5px solid #353A49;
+        width: 158%;
+        margin-bottom: 5%;
+    }
+
+
+#imagen-earbuds{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 132%;
+        height: 470px;
+        background-color: #F8F9FA;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-right: 10px;
+        margin-bottom: -60px;
+        margin-left: -110px;
+    
+    }
+    .imagen-icon {
+        display: flex;
+        width: 600px;
+        height: 400px;
+    }
+
+
 }

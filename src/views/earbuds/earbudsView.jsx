@@ -25,80 +25,95 @@ const Earbuds = () => {
     setMainImage(imageUrl);
   };
 
-  return (
+  return( 
     <>
       <Navbar />
-      <div id="productDetails">
-        <p id="detailsText">🡨 See product details</p>
-      </div>
       <main>
-        <section id="images-section">
-          <div id="samples">
-            <input
-              id="model-earbud"
-              type="image"
-              src="src/assets/images/earbuds/earbuds_01.png"
-              onClick={() =>
-                handleImageClick("src/assets/images/earbuds/earbuds_01.png")
-              }
-            />
-            <input
-              id="model-earbud"
-              type="image"
-              src="src/assets/images/earbuds/earbuds_02.png"
-              onClick={() =>
-                handleImageClick("src/assets/images/earbuds/earbuds_02.png")
-              }
-            />
-            <input
-              id="model-earbud"
-              type="image"
-              src="src/assets/images/earbuds/earbuds_03.png"
-              onClick={() =>
-                handleImageClick("src/assets/images/earbuds/earbuds_03.png")
-              }
-            />
-            <input
-              id="model-earbud"
-              type="image"
-              src="src/assets/images/earbuds/earbuds_04.png"
-              onClick={() =>
-                handleImageClick("src/assets/images/earbuds/earbuds_04.png")
-              }
-            />
-          </div>
+        <section id="seeMore">
+            <img id="arrow" src="src/assets/images/icons/Arrow.svg" />
+            <div id="seeProductDetails">See product details</div>
         </section>
-        <img id="main-banner" src={mainImage} alt="Earbuds" />
-        <section id="main-aside">
-          <article id="description">
-            <h1>Google Pixel Buds Pro</h1>
-            <span>Music & Sound</span>
-            <p id="price">229 €</p>
-            <hr id="separator" />
-          </article>
-          <article id="choose">
-            <span>Choose a color</span>
-            <div id="colors">
-              <input id="blue" type="button" />
-              <input id="white" type="button" />
-              <input id="black" type="button" />
-              <input id="grey" type="button" />
-              <input id="green" type="button" />
-              <input id="orange" type="button" />
+        <section id="all">
+          <section id="images-section">
+            <div id="samples">
+              <input
+                id="model-earbud"
+                type="image"
+                src="src/assets/images/earbuds/earbuds_01.png"
+                onClick={() =>
+                  handleImageClick("src/assets/images/earbuds/earbuds_01.png")
+                }
+              />
+              <input
+                id="model-earbud"
+                type="image"
+                src="src/assets/images/earbuds/earbuds_02.png"
+                onClick={() =>
+                  handleImageClick("src/assets/images/earbuds/earbuds_02.png")
+                }
+              />
+              <input
+                id="model-earbud"
+                type="image"
+                src="src/assets/images/earbuds/earbuds_03.png"
+                onClick={() =>
+                  handleImageClick("src/assets/images/earbuds/earbuds_03.png")
+                }
+              />
+              <input
+                id="model-earbud"
+                type="image"
+                src="src/assets/images/earbuds/earbuds_04.png"
+                onClick={() =>
+                  handleImageClick("src/assets/images/earbuds/earbuds_04.png")
+                }
+              />
             </div>
-          </article>
-          <article id="delivery">
-            <h2>229 €</h2>
-            <hr id="separator" />
-            <div id="cart-form">
-              <Selector id="quantityButton"/>
-              <Button handleAdd={handleAdd} handleRemove={handleRemove} />
+          
+            <div id="imagen-earbuds">
+              <img id="main-banner" src={mainImage} alt="Earbuds" />
             </div>
-            <span>
-              <img src="src\assets\images\icons\Delivery.svg" alt="Delivery" />
-              Delivers 29 Apr to 08023
-            </span>
-          </article>
+          </section>
+          <section id="right">
+              <section id="information">
+                  <div id="title">
+                      <div id="googlePixelBuds">Google Pixel Buds Pro</div>
+                    
+                      <div id="music-sound">Music & Sound</div>
+                      <div id="price">229 €</div>
+                      <hr id="separator"></hr>
+                      <div id="choose-a-color">Choose a color</div> 
+                  
+                  </div>
+              </section>
+               
+              <div id="slowSection">
+                <section id="slowInfo">
+                  <div id="colors">
+                    <button id="blue"></button>
+                    <button id="white"></button>
+                    <button id="black"></button>
+                    <button id="grey"></button>
+                    <button id="green"></button> 
+                    <button id="orange"></button>
+                  </div>
+                </section>
+                <section id="salesSpace">
+                  <div id="first">
+                      <div id="priceUpp">229 €</div>
+                      <hr id="separator2"></hr>
+                      <div id="add">
+                        <Selector id="quantityButton"/>
+                        <Button handleAdd={handleAdd} handleRemove={handleRemove} />
+                      </div>
+                  </div>
+                  <div id="second">
+                    <img src="src\assets\images\icons\Delivery.svg" id="delivery" alt="delivery"/>
+                    <p id="deliver">Delivers 29 Apr to</p> <p id="num">08023</p>
+                  </div>
+                </section> 
+              </div>   
+          </section>
         </section>
       </main>
       <Footer />
