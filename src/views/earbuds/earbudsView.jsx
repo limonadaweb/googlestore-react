@@ -13,11 +13,16 @@ const Earbuds = () => {
   const handleAdd = () => {
     setCart([...cart, "earbud"]);
     console.log("Added to cart:", [...cart, "earbud"]);
+    localStorage.setItem(
+      "earbuds",
+      mainImage + "-" + "Google Pixel Buds Pro" + "-" + "229€"
+    );
   };
 
   const handleRemove = () => {
     setCart(cart.slice(0, -1));
     console.log("Removed from cart:", cart.slice(0, -1));
+    localStorage.removeItem("earbuds");
   };
 
   const handleImageClick = (imageUrl) => {

@@ -4,7 +4,6 @@ import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
 import { useState } from "react";
 
-
 const Smartwatch = () => {
   const [mainImage, setMainImage] = useState(
     "src/assets/images/smartwatch/smartwatch_black.png"
@@ -18,12 +17,18 @@ const Smartwatch = () => {
   const handleAdd = () => {
     setCart([...cart, "earbud"]);
     console.log("Added to cart:", [...cart, "earbud"]);
+    localStorage.setItem(
+      "smartwatch",
+      mainImage + "-" + "Fitbit Inspire 3" + "-" + "99,95 €"
+    );
   };
 
   const handleRemove = () => {
     setCart(cart.slice(0, -1));
     console.log("Removed from cart:", cart.slice(0, -1));
+    localStorage.removeItem("smartwatch");
   };
+
   return (
     <>
       <Navbar />
@@ -107,9 +112,12 @@ const Smartwatch = () => {
                       <option value="unit">9</option>
                       <option value="unit">10</option>
                     </select>
-                    <Button handleAdd={handleAdd} handleRemove={handleRemove} id="buttonAdd"/>
+                    <Button
+                      handleAdd={handleAdd}
+                      handleRemove={handleRemove}
+                      id="buttonAdd"
+                    />
                   </div>
-                  
                 </div>
                 <div id="second">
                   <img

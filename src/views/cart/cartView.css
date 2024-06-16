@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap");
+
+.cartLayout {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bodyCart {
+  background-color: chartreuse;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productsCart {
+  background-color: yellow;
+  width: 50%;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.productInformation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fb;
+  border-radius: 10px;
+}
+
+.productTitle {
+  background-color: tomato;
+  font-size: 8px;
+}
+
+.removeItem {
+  background-color: transparent;
+  color: #1a73e8;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.receiptCart {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+}
+
+input {
+  border: 0;
+  outline: none;
+  font-size: 8px;
+  background-color: transparent;
+}
+
+.productImage {
+  width: 25%;
+}
