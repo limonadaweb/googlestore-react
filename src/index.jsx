@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="Index">
       <Routes>
-        <Route path="/layout" element={<Layout />} />
+        <Route path="/" element={<Layout />} />
         <Route path="/earbudsView" element={<Earbuds />} />
         <Route path="/smarthwatchView" element={<Smartwatch />} />
-        <Route path="/" element={<Cart />} />
+        <Route path="/cartView" element={<Cart />} />
       </Routes>
     </div>
   );

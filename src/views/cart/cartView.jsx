@@ -48,6 +48,19 @@ const Cart = () => {
     localStorage.removeItem(id);
   };
 
+  const calculateSubtotal = () => {
+    return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  };
+
+  const calculateTotal = (subtotal, shippingCost, vat) => {
+    return subtotal + shippingCost + vat;
+  };
+
+  const shippingCost = 4.9;
+  const subtotal = calculateSubtotal();
+  const estimatedVAT = subtotal * 0.21;
+  const total = calculateTotal(subtotal, shippingCost, estimatedVAT);
+
   return (
     <>
       <Navbar />
@@ -96,8 +109,30 @@ const Cart = () => {
               </div>
             ))}
           </div>
-
-          <div className="receiptCart"></div>
+          {cartItems.length > 0 && (
+            <div className="receiptCart">
+              <h3>Order Summary</h3>
+              <div className="receiptData">
+                <div className="orderData">
+                  <p>Subtotal</p>
+                  <p>Shipping costs</p>
+                  <p>estimated VAT</p>
+                  <p>Total estimated</p>
+                </div>
+                <div className="costData">
+                  <p className="subtotal">{subtotal.toFixed(2)} €</p>
+                  <p className="shippingCost">€ 4.90</p>
+                  <p>Including</p>
+                  <p className="totalEstimated">{total.toFixed(2)} €</p>
+                  <p className="monthPayment">
+                    or € {(total / 3).toFixed(2)}/month with 3 monthly
+                    installments *
+                  </p>
+                </div>
+              </div>
+              <button className="completePurchase">Complete Purchase</button>
+            </div>
+          )}
         </div>
       </div>
       <Footer />
