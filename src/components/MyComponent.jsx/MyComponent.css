@@ -1,0 +1,19 @@
+
+
+
+.addButton {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  margin-left: 5px;
+  padding: 0.8rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+
+
+
