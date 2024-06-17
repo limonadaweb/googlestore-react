@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Major+Mono+Display&display=swap");
+
+.cartLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  justify-content: space-around;
+}
+
+.cartTitle {
+  text-align: center;
+  
+}
+
+.bodyCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  align-items: flex-start;
+}
+
+.productsCart {
+  width: 55%;
+  height: 40%;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.productInformation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fb;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.productTitle {
+  font-size: 8px;
+}
+
+.removeItem {
+  background-color: transparent;
+  color: #1a73e8;
+  border: none;
+  cursor: pointer;
+  font-size: 8.5px;
+  font-weight: bold;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+input {
+  border: 0;
+  outline: none;
+  font-size: 8px;
+  background-color: transparent;
+}
+
+.productPrice {
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.productImage {
+  width: 25%;
+}
+
+.receiptCart {
+  width: 30%;
+  background-color: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.receiptData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.orderData {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  font-weight: bold;
+  color: #353a49;
+}
+
+.costData {
+  font-size: 7px;
+  color: #353a49;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.monthPayment {
+  font-size: 5px;
+}
+
+.completePurchase {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 70%;
+  cursor: pointer;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.completePurchase:hover {
+  background-color: #0056b3;
+}
