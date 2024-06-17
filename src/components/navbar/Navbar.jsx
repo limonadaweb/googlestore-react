@@ -1,68 +1,39 @@
 import React from "react";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <>
-      <navbar>
-        <div id="head">
-          <div>
-            <img
-              src="src\assets\images\google-logo.png"
-              className="logoGoogle"
-              id="logoGoogle"
-            />
-          </div>
-          <p id="phones" className="phones">
-            Phones
-          </p>
-          <p id="earbuds" className="earbuds">
+    <nav id="navbar">
+      <div id="nav-left">
+        <Link to="/">
+          <img id="logo" src="src\assets\images\google-logo.png" alt="Google" />
+        </Link>
+        <ul id="nav-list">
+          <li>Phones</li>
+          <li id="active-item">
             <Link to="/earbudsView">Earbuds</Link>
-          </p>
-          <p id="watches" className="watches">
-            <Link to="/smarthwatchView">Watches</Link>
-          </p>
-          <p id="smartHome" className="smartHome">
-            Smart Home
-          </p>
-          <p id="accessories" className="accessories">
-            {" "}
-            Accessories
-          </p>
-          <p id="subscriptions" className="subscriptions">
-            {" "}
-            Subscriptions
-          </p>
-        </div>
-        <div class="icons">
-          <img
-            src="src\assets\images\icons\Search.svg"
-            alt="logoSearch"
-            id="logoSearch"
-          />
-          <img
-            src="src\assets\images\icons\Help.svg"
-            alt="logoHelp"
-            id="logoHelp"
-          />
-
-          <Link to="/cartView">
-            <img
-              src="src\assets\images\icons\Cart.svg"
-              alt="logoCart"
-              id="logoCart"
-            />
-          </Link>
-          <img
-            src="src\assets\images\icons\Avatar.svg"
-            alt="logoAvatar"
-            id="logoAvatar"
-          />
-          <img src="src\assets\images\icons\Menu.svg" alt="menu" id="menu" />
-        </div>
-      </navbar>
-    </>
+          </li>
+          <li>
+            <Link to="/smarthwatchView" id="smartwatch">
+              Watches
+            </Link>
+          </li>
+          <li>Smart Home</li>
+          <li>Accesories</li>
+          <li>Subscriptions</li>
+        </ul>
+      </div>
+      <div className="burguerMenu">☰</div>
+      <div id="nav-icons">
+        <img src="src\assets\images\icons\Search.svg" alt="Search" />
+        <img src="src\assets\images\icons\Help.svg" alt="Help" />
+        <Link to="/cartView">
+          <img src="src\assets\images\icons\Cart.svg" alt="Cart" />
+        </Link>
+        <img src="src\assets\images\icons\Avatar.svg" alt="Avatar" />
+      </div>
+    </nav>
   );
 };
 

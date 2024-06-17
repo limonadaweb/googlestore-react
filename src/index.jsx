@@ -1,4 +1,4 @@
-import "./css/App.css";
+import "./css/index.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Earbuds from "./views/earbuds/earbudsView";

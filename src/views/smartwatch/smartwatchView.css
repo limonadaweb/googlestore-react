@@ -213,7 +213,7 @@
 }
 
 /* Media query para tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 915px) {
   #all {
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@
 
 
 /* Media query para mÃ³viles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 431px) {
   #all {
     margin-left: 2em;
     display: flex;

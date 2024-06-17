@@ -5,7 +5,6 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 60%;
   width: 100%;
 }
 
@@ -146,6 +145,7 @@ select {
   }
   #cart-form {
     flex-direction: column;
+    align-items: center;
   }
   #number {
     max-width: 32%;
